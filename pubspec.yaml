@@ -1,5 +1,5 @@
 name: break_reminder_app
-description: A Break Reminder App using BloC and Clean Architecture.
+description: A Code Break App using BloC and Clean Architecture.
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -14,13 +14,21 @@ dependencies:
   flutter_local_notifications: ^13.0.0
   lottie: ^2.2.0
 
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: ^0.13.1
   lint: ^2.0.0
 
 flutter:
   uses-material-design: true
   assets:
     - assets/lottie/setup_header.json
+    - assets/icon/app_icon.png
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+  remove_alpha_ios: true
+  android_icon_name: "ic_launcher"
