@@ -1,5 +1,5 @@
-package com.example.break_schedule_app
+package com.example.break_reminder_app
 
 import io.flutter.embedding.android.FlutterActivity
 
-class MainActivity: FlutterActivity()
+class MainActivity : FlutterActivity() // Kotlin syntax
