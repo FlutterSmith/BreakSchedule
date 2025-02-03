@@ -1,7 +1,7 @@
+import 'package:break_reminder_app/features/break_reminder/presentation/bloc/breal_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'features/break_reminder/presentation/bloc/break_bloc.dart';
 import 'features/break_reminder/presentation/screens/setup_screen.dart';
 import 'core/notification_service.dart';
 
