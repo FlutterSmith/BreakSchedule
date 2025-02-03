@@ -66,7 +66,7 @@ class _SetupScreenState extends State<SetupScreen> {
                 const SizedBox(height: 16),
                 // Form container in a Card
                 Card(
-                  color: Colors.white.withOpacity(0.85),
+                  color: Colors.white.withOpacity(0.40),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20),
                   ),

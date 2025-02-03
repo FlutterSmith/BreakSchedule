@@ -102,7 +102,7 @@ class _BreakScreenState extends State<BreakScreen>
                   SizedBox(
                     width: 150,
                     height: 150,
-                    child: Lottie.asset('assets/lottie/wellbeing.json',
+                    child: Lottie.asset('assets/lottie/setup_header.json',
                         fit: BoxFit.contain),
                   ),
                   const SizedBox(height: 16),
