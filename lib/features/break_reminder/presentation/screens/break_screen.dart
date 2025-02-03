@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:math';
+import 'package:break_reminder_app/core/notification_service.dart';
 import 'package:flutter/material.dart';
-import '../../../core/notification_service.dart';
 
 class BreakScreen extends StatefulWidget {
   final int breakLength;
@@ -11,7 +11,8 @@ class BreakScreen extends StatefulWidget {
   _BreakScreenState createState() => _BreakScreenState();
 }
 
-class _BreakScreenState extends State<BreakScreen> with TickerProviderStateMixin {
+class _BreakScreenState extends State<BreakScreen>
+    with TickerProviderStateMixin {
   late int _remainingSeconds;
   Timer? _countdownTimer;
   String _wellbeingTip = '';
@@ -87,13 +88,19 @@ class _BreakScreenState extends State<BreakScreen> with TickerProviderStateMixin
               children: [
                 const Text(
                   "It's break time!",
-                  style: TextStyle(fontSize: 32, color: Colors.white, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                      fontSize: 32,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 16),
                 Text(
                   _wellbeingTip,
-                  style: const TextStyle(fontSize: 20, color: Colors.white70, fontStyle: FontStyle.italic),
+                  style: const TextStyle(
+                      fontSize: 20,
+                      color: Colors.white70,
+                      fontStyle: FontStyle.italic),
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 32),
@@ -107,11 +114,15 @@ class _BreakScreenState extends State<BreakScreen> with TickerProviderStateMixin
                         value: _animationController.value,
                         strokeWidth: 12,
                         backgroundColor: Colors.white24,
-                        valueColor: const AlwaysStoppedAnimation<Color>(Colors.white),
+                        valueColor:
+                            const AlwaysStoppedAnimation<Color>(Colors.white),
                       ),
                       Text(
                         _formatTime(_remainingSeconds),
-                        style: const TextStyle(fontSize: 32, color: Colors.white, fontWeight: FontWeight.bold),
+                        style: const TextStyle(
+                            fontSize: 32,
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold),
                       ),
                     ],
                   ),
@@ -125,8 +136,9 @@ class _BreakScreenState extends State<BreakScreen> with TickerProviderStateMixin
                   icon: const Icon(Icons.close),
                   label: const Text('Skip Break'),
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.redAccent,
-                    padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                    backgroundColor: Colors.redAccent,
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 24, vertical: 12),
                   ),
                 )
               ],

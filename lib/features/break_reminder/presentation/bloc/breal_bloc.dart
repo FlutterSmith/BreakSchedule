@@ -1,10 +1,9 @@
 import 'dart:async';
-import 'dart:math';
 import 'package:bloc/bloc.dart';
+import 'package:break_reminder_app/features/break_reminder/domain/repos/break_repo_impl.dart';
 import 'break_event.dart';
 import 'break_state.dart';
 import '../../domain/entities/break_schedule.dart';
-import '../../data/repositories/break_repository_impl.dart';
 
 class BreakBloc extends Bloc<BreakEvent, BreakState> {
   final BreakRepositoryImpl _repository = BreakRepositoryImpl();

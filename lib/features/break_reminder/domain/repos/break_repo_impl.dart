@@ -1,8 +1,9 @@
 import 'dart:async';
 import 'dart:math';
-import '../../../core/notification_service.dart';
+import 'package:break_reminder_app/core/notification_service.dart';
+import 'package:break_reminder_app/features/break_reminder/domain/repos/break_repo.dart';
+
 import '../../domain/entities/break_schedule.dart';
-import '../../domain/repositories/break_repository.dart';
 
 class BreakRepositoryImpl implements BreakRepository {
   Timer? _scheduleTimer;
