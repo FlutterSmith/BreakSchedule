@@ -209,7 +209,8 @@ class _SetupScreenState extends State<SetupScreen> {
                               ),
                               child: const Text(
                                 'Save Schedule',
-                                style: TextStyle(fontSize: 18),
+                                style: TextStyle(
+                                    fontSize: 18, color: Colors.white),
                               ),
                             ),
                           ),
